@@ -48,6 +48,8 @@ A primeira cosia que é importante falar quando se trata de estudar, é sobre se
 
 - Pratique, erre, sofra - A melhor forma de estudar programação é praticando, então faça o máximo de exercícios que conseguir, faça alguns projetos simples, se desafie. É só martelando e batendo muito a cabeça que você vai começar a entender como realmente as coisas funcionam e se adaptar para não cometer os mesmos erros ("Erre rápido, pra que possa corrigir o mais cedo possível")
 
+- Digite ao invés de copiar - Muitas vezes você vai acabar encontrando a resposta para um problema em um fórum, com o código já pronto, ou vai acompanhar um tutorial no youtube com o código disponível. Nesses casos, a tentação de usar o famoso "Ctrl + C" e "Ctrl + V" é grande, mas evite isso ao máximo. Quando você precisar replicar um código, leia ele, tente entender e por fim copie manualmente em seu projeto. Isso te ajudará a fixar o conteúdo e se adaptar à sintaxe da linguagem.
+
 - Por fim, ensine - Um estudo sobre as formas de estudar diz que a melhor forma de aprender algo, é ensinando isso a outra pessoa (com até 90% de absorção do conteúdo estudado). Então tente documentar as coisas que você estuda, como se estivesse explicando pro você do passado, que ainda não entendia esse conceito, ou pratique explicando isso pra sua família e amigos. Caso se sinta inibído, escreva um diário, se não, mostre isso pro mundo, escreva um blog, crie um canal no youtube, qualquer coisa. O importante é você explicar os conceitos estudados de uma forma clara e concisa. Isso te ajuda a organizar as próprias ideias, te fazendo revisitar conceitos não tão firmados, e construindo um material muito bom no final de tudo.
 
 Tudo isso que eu tenho falado pode parecer papo de coach (e meio que é), mas não se deixe desanimar com toda essa ladainha. Podem parecer besteiras, mas se você criar bons hábitos, verá que com o tempo, as coisas realmente vão parecer se encaixar. Durante a pandemia eu passei por um período difícil, quase tive um burnout, mas consegui me recolocar nos trilhos graças a muitas dessas coisas que eu estou compartilhando com você. No princípio eu também tive dificuldade em entender isso, e tinha também preguiça dessas coisas, mas hoje reconheço a real importância dessa conversa. 
@@ -80,6 +82,26 @@ Apesar disso tudo, a linguagem C tem sim seus defeitos (como a não implementaç
 
 Estrutura de um código C
 -
+
+Para esse conteúdo inicial, você não precisará configurara nada e nem instalar nenhum programa em seu computador. Vamos facilitara as coisas e utilizar uma IDE online chamada [Replit](https://replit.com/~). Ao abrir, ele pedirá que você logue com uma conta, você pode fazer isso com uma conta google, mas se quiser, aproveite e já crie uma conta no github e faça o login com ela. Em um módulo futuro você utilizará o github para algumas tarefas, portanto se já fizer isso agora, quando chegar a hora, você já terá isso pronto.
+
+Depois de criar uma conta, crie um novo "repl" clicando no botão de "+" da página inicial. Em template selecione "C", dê um novo nome ao seu repositório e clique em criar:
+
+![Image](images/replit.png "icon")
+
+![Image](images/replit2.png "icon")
+
+Essa será a interface que você verá em seguida:
+
+![Image](images/replit3.png "icon")
+
+À esquerda temos o seu projeto, com sua árvore de arquivos. É aqui que você organizará seus arquivos e pastas. 
+
+Ao centro, temos seu editor de texto, que é onde você escreverá seu código.
+
+E à direita, temos um console onde serão printadas as informações do seu código compilado (erros, avisos, ou simplesmente os resultados dos seus "printf").
+
+Para rodar o código escrito no seu arquivo "main.c", basta clicar no botão verde de "Run" na parte superior. Na parte de bibliotecas desse documento, você verá como compilar outros arquivos do seu programa além do main.
 
 ``` C
 //Isso é um comentário. Tudo que vier precedido de duas barras não é lido pelo computador na hora da execução
@@ -493,10 +515,12 @@ Nesses casos, você fara a importação do arquivo existente na mesma pasta de o
 
 Nesse caso, seu único arquivo ".c" será o principal,e os demais funcionaram como bibliotecas de onde você importará funções, variáveis, e qualquer outra coisa que quiser, logo, devem receber a terminação ".h"
 
+O compilador tem como padrão o início da sua leitura no arquivo "main.c", você até consegue alterar isso, mas não é algo que valha a pena. Habitue-se a ter esse arquivo para chamar as rotinas proveniente dos seus demais arquivos. Isso além de mais cômodo, é uma boa prática que facilita o entendimento aos demais programadores, que saberão também que devem começar a estudar o código por esse arquivo.
+
 Exercícios
 -
 
-Bom, agora você já tem uma boa base em relação à sintaxe de C e deve estar apto a criar seus próprios códigos. Para confirmar isso, resolva os seguinte exercícios, e envie para "olavo1611@gmail.com" até o dia 05/02 (você será avaliado). Caso tenha dúvidas, não se acanhe em me chamar em "16996426659".
+Bom, agora você já tem uma boa base em relação à sintaxe de C e deve estar apto a criar seus próprios códigos. Para confirmar isso, resolva os seguinte exercícios em um repositório público do Replit, e envie o link desse para "olavo1611@gmail.com" até o dia 05/02 (você será avaliado). Caso tenha dúvidas, não se acanhe em me chamar em "16996426659".
 
 1. Crie um código em C que printe n números da sequência fibonacci (o primeiro deverá sempre ser o número 1,e número n de repetições deve ser escolhido pelo usuário)
 
@@ -505,67 +529,3 @@ Bom, agora você já tem uma boa base em relação à sintaxe de C e deve estar 
 3. Crie um código em C para cadastro de automóveis, utilizando structures. (O usuário deve entrar com o modelo, ano e cor do carro, e esses valores devem ser adicionados a uma lista salva em um arquivo txt)
 
 4. Escreva um programa que declare um inteiro, um real e um char, e ponteiros para inteiro, real, e char. Associe as variaveis aos ponteiros (use &). Modifique os valores de cada variável usando os ponteiros. Imprima os valores das variáveis antes e após a modificação.
-
-Como escrever melhores código (Boas práticas)
-=
-
-Como você deve ter percebido durante o capítulo anterior, existem várias formas de fazer a mesma coisa. E nós, programadores, temos total liberdade para criarmos um código da forma que quisermos. Mas é importante também pensarmos que em algum momento precisaremos revisitar esse código (ou mostrá-lo a outra pessoa), e para que todos entendam o que está acontecendo, existem algumas convenções importantes de serem consideradas, de forma a tornar o seu código mais legível e produtivo. 
-
-Nomes
--
-
-Nomes de arquivos, variáveis, funções
-
-Comentários
--
-
-Documentação
--
-
-Programação orientada a objetos
--
-
-1) Faça sempre um comentário no início do código com as seguintes informações:
-
-Nome do programa
-Objetivo do programa
-Nome do programador
-Data de criação
-
-Identação
--
-
-Design patterns
--
-
-----
-
-6) Declare as variáveis logo após o título da rotina. Não declare as variáveis “soltas” no meio do código da função.
-Organize seu código, sempre declarando as variáveis logo após o título da rotina e em seguida inicialize-as.
-
-7) Seja sempre claro e objetivo. Não convém usar comandos muito rebuscados só porque você aprendeu uma forma interessante de fazer uma determinada operação, mas que ninguém (ou quase ninguém) usa. Pense que outra pessoa pode ter que dar manutenção no código e ficar confusa com um comando exótico.
-
-8 ) Procure não fazer rotinas excessivamente extensas. Quanto menor e mais objetiva for a rotina, melhor.
-
-9) Evite repetições de código. Caso um trecho de código apareça várias vezes no programa, construa uma rotina e chame-a quando for necessário. Quanto menor for o tamanho da rotina, normalmente é mais fácil para depurar.
-
-10) Faça o planejamento. Tenha sempre qual é seu objetivo em mente. Não saia escrevendo código sem saber direito o que vai fazer. Elabore um diagrama no mínimo. Acredite, isso ajuda muuuito.
-
-11) Evite a utilização de Números Mágicos:
-Os chamados números mágicos são valores que aparecem no código e são usados como constantes, embora não tenham sido declarados como tal. Ao invés de usar o número utilize uma constante previamente declarada com #define.
-(pi, por exemplo. O nº de euler, etc...)
-
-12) Utilize o espaçamento de forma a tornar o código mais legível.
-
-13) Declare as constantes no início do código e nunca no meio do mesmo.
-
-14) Utilize sempre letras maiusculas para nomear as constantes em linguagem C.
-
-15) Utilize sempre { } mesmo que seja para apenas um comando dentro do bloco.
-
-16) Não exagere nos comentários. Comandos óbvios não precisam ser comentados.
-
-17) Explique fórmulas complexas e passos complicados de um determinado algoritmo. Nesses casos, um comentário explicativo torna-se obrigatório a fim de que a manutenção do código possa ser feita com menos esforço.
-
-18) Escreva os comentários necessários na medida que for escrevendo o código. Não escreva o código e deixe para comentar depois. É bem mais
-fácil elaborar os comentários quando você ainda se lembra dos detalhes.

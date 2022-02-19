@@ -24,7 +24,6 @@ A programação é uma ferramenta poderosissíma, e de amplo uso, que vai muito 
         - Ponteiros
         - Bibliotecas e arquivos externos
         - Exercícios
-    - **1.3 Como escrever códigos melhores (boas práticas)**
 
 
 2. **[Documentação](https://google.com)**
@@ -67,8 +66,11 @@ A programação é uma ferramenta poderosissíma, e de amplo uso, que vai muito 
     - Evitando delays
     - Exercícios
 
+6. **[Como escrever melhores códigos (Boas práticas)](https://google.com)**
 
-6. **[Referências](https://google.com)**
+
+
+7. **[Referências](https://google.com)**
     - Materiais utilizados para criação desse documento
     - Canais do youtube recomendados para estudo de programação
     - Lista de livros interessantes
