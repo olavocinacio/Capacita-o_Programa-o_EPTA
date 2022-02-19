@@ -10,6 +10,7 @@ A programação é uma ferramenta poderosissíma, e de amplo uso, que vai muito 
         - Como estudar?
     - **1.2 Programando em C**
         - O que é C?
+        - Ambiente inicial de desenvolvimento
         - Estrutura do código em C
         - Olá mundo
         - Variáveis

@@ -80,7 +80,7 @@ Para a área de embarcados (que é a que nos interessa aqui), a lingugagem C é,
 
 Apesar disso tudo, a linguagem C tem sim seus defeitos (como a não implementação do conceito de orientação a objetos; pressupor que o programador sabe o que está fazendo, ocasionando problemas como memory leaks, buffer overruns, segmentation faults) e tem recebido potenciais substitutos muito interessantes, como é o caso do Rust, a maior aposta para substituir C na área de embarcados. Mas deixemos isso como tarefa de casa para um futuro próximo...
 
-Estrutura de um código C
+Ambiente inicial de desenvolvimento
 -
 
 Para esse conteúdo inicial, você não precisará configurara nada e nem instalar nenhum programa em seu computador. Vamos facilitara as coisas e utilizar uma IDE online chamada [Replit](https://replit.com/~). Ao abrir, ele pedirá que você logue com uma conta, você pode fazer isso com uma conta google, mas se quiser, aproveite e já crie uma conta no github e faça o login com ela. Em um módulo futuro você utilizará o github para algumas tarefas, portanto se já fizer isso agora, quando chegar a hora, você já terá isso pronto.
@@ -102,6 +102,11 @@ Ao centro, temos seu editor de texto, que é onde você escreverá seu código.
 E à direita, temos um console onde serão printadas as informações do seu código compilado (erros, avisos, ou simplesmente os resultados dos seus "printf").
 
 Para rodar o código escrito no seu arquivo "main.c", basta clicar no botão verde de "Run" na parte superior. Na parte de bibliotecas desse documento, você verá como compilar outros arquivos do seu programa além do main.
+
+Estrutura de um código C
+-
+
+Vamos então entender como um código em C é estruturado:
 
 ``` C
 //Isso é um comentário. Tudo que vier precedido de duas barras não é lido pelo computador na hora da execução
