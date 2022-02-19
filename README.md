@@ -4,9 +4,12 @@ Esse repositório foi criado com o objetivo de auxiliar os membros da Equipe de 
 
 A programação é uma ferramenta poderosissíma, e de amplo uso, que vai muito além de escrever código. Nessa capacitação abordaremos os seguintes tópicos:
 
-1. [Aprendendo a programar](https://google.com)
-    - O que é uma linguagem de programação?
-    - Linguagem C
+1. **[Aprendendo a programar](https://google.com)**
+    - **1.1 O começo da sua jornada**
+        - O que é uma linguagem de programação?
+        - Como estudar?
+    - **1.2 Programando em C**
+        - O que é C?
         - Estrutura do código em C
         - Olá mundo
         - Variáveis
@@ -16,13 +19,15 @@ A programação é uma ferramenta poderosissíma, e de amplo uso, que vai muito 
         - Condicionais
         - Criando funções
         - Loops
-        - Ponteiros
-        - Listas
         - Structures
-        - Bibliotecas
-    - Exercícios
+        - Listas
+        - Ponteiros
+        - Bibliotecas e arquivos externos
+        - Exercícios
+    - **1.3 Como escrever códigos melhores (boas práticas)**
 
-2. [Documentação](https://google.com)
+
+2. **[Documentação](https://google.com)**
     - Por que a documentação é importante?
     - O que é markdown e como utilizar
         - Headers 
@@ -33,7 +38,7 @@ A programação é uma ferramenta poderosissíma, e de amplo uso, que vai muito 
     - Exercícios
 
 
-3. [Versionamento de código](https://google.com)
+3. **[Versionamento de código](https://google.com)**
     - O que é versionamento de código
     - O que é git?
         - Git x Github
@@ -44,7 +49,7 @@ A programação é uma ferramenta poderosissíma, e de amplo uso, que vai muito 
     - Exercícios
 
 
-4. [Primeiros passos com arduino](https://google.com)
+4. **[Primeiros passos com arduino](https://google.com)**
     - O que é arduino?
     - Instalação
     - "Hello world" (blink)
@@ -52,16 +57,18 @@ A programação é uma ferramenta poderosissíma, e de amplo uso, que vai muito 
     - Bibliotecas
     - Exercícios
 
-5. [Primeiros passos com ESP](https://google.com)
+
+5. **[Primeiros passos com ESP](https://google.com)**
     - O que é ESP?
-    - Comparação com o Arduino
+        - Comparação com o Arduino
     - Instalação
-    - Blink
+        - Blink
     - freeRTOS
     - Evitando delays
     - Exercícios
 
-6. [Referências](https://google.com)
+
+6. **[Referências](https://google.com)**
     - Materiais utilizados para criação desse documento
     - Canais do youtube recomendados para estudo de programação
     - Lista de livros interessantes

@@ -1,20 +1,62 @@
-O que é uma linguagem de programação?
+Aprendendo a programar
 =
+
+O que é uma linguagem de programação?
+-
 
 Os computadores têm fama de serem muito "inteligentes", mas isso é um mito. Na realidade, eles são só muito obedientes, e precisam que você diga passo a passo (em mínimos detalhes) o que você quer fazer. Sendo assim, você trabalhará com algoritmos, que funcionarão como uma receita de bolo que ele deverá seguir. Mas como já dito, o computador é burrinho, e não entende nossa linguagem. 
 
 A "língua" que os computadores falam é binário (esse sistema recebe esse nome pois só possui duas possíveis entradas, 0 ou 1), provavelmente, nesse momento você deve estar pensando que não seria muito agradável passar um bom tempo contando quantos 0 em sequência você deve digitar até o próximo um, só pra fazer algo simples, como uma soma. E realmente não era uma experiência muito agradável, pra você ter noção, esse é o código escrito para lançamento do foguete Apollo (naquela época, as instruções eram marcadas em papel, com ou sem furo - 0 e 1). 
 
-Para entender um pouco melhor esse processo assista ao vídeo [How do computers read code?](https://www.youtube.com/watch?v=QXjU9qTsYCc)
+Para entender um pouco melhor esse processo assista ao vídeo: [How do computers read code?](https://www.youtube.com/watch?v=QXjU9qTsYCc)
 
 Sendo assim, foram criadas novas linguagens para dizer ao computador o que fazer, algo mais próximo da linguagem humana, que seria futuramente "traduzida" para a linguagem de máquina. A primeira linguagem inventada (que foi comercializada) foi o Assembly, em 1947, por Kathleen Booth. Aqui está uma comparação entre um código assembly e um código binário que fazem a mesma coisa, a soma entre dois valores:
 
+Apesar de ser mais fácil que escrever um código direto em binário, concorda que ainda é muito complexo fazer as coisas em assembly? A galera daquela época também achava, e foi assim que a história se repetiu, e foram criadas novas linguagens, baseadas diretamente em binário, ou dessa vez baseando-se em assembly, como é o caso da linguagem que teremos foco no futuro dessa capacitação, a Linguagem C, criada em 1972, por Dennis Ritchie
 
-Apesar de ser mais fácil que escrever um código direto em binário, concorda que ainda é muito complexo fazer as coisas em assembly? A galera daquela época também achava, e foi assim que a história se repetiu, e foram criadas novas linguagens, baseadas diretamente em binário, ou dessa vez baseando-se em assembly, como é o caso da linguagem que teremos foco a partir de agora, a Linguagem C, criada em 1972, por Dennis Ritchie
 
-C
+Como estudar?
+-
+
+Como um estudante curioso, já procurei por muitos materiais, vídeos, livros e qualquer outra coisa relacionada a programação. Testei diferentes coisas, e apanhei muito, então vou resumir aqui a forma que eu considero mais efetiva para se estudar algo (É claro que você pode adequar isso a sua agenda, suas necessidades, e métodos já utilizados. No final, o importante é que você aprenda).
+
+A primeira cosia que é importante falar quando se trata de estudar, é sobre ser produtivo e ser ocupado. Essas são coisas totalmente diferentes, e você já vai entender o porquê. Sabe quando você passa horas "estudando" para uma matéria, passando pelas páginas do livro perdido, e olhando sem rumo pros exercícios? Então, deixa eu te contar, você não está estudando realmente, você só está se ocupando com uma tarefa que julga importante, mas não a está realizando de uma forma efetiva. Nessas situações você não passa de uma pessoa que está ocupando seu tempo de forma não inteligente. Agora vamos para uma outra situação, aquela em que você ficou apenas uma hora procurando por algum assunto de seu interesse, mas parece que passou a tarde toda estudando, de tanta coisa que aprendeu. Nesse caso, você foi extremamente produtivo.
+
+É claro que não escolhemos quando vamos ser produtivos, mas existem algumas práticas que podem te ajudar a ter esses momentos de "deep focus":
+
+- Tenha um ambiente sem distrações para estudar (Você precisa ser capaz de pensar sem ter suas ideias interrompidas) - Nem sempre você vai conseguir um ambiente totalmente isolado do mundo externo, mas tente criar uma situação o mais próximo do ideal. Se você trabalha bem com música, coloque os fones, coloque uma música que não vai te distrair (deve ser algo que te passe uma sensação de conforto, mas que não vai ter fazer parar de trabalhar para cantar ou dançar), e foque no que está na sua frente naquele exato momento. Uma boa dica para esses momentos é descobrir novas músicas dos seus artistas favoritos
+
+- Tenha um plano de ação - Antes de realmente começar a estudar, você precisa pensar nas suas motivações, o que você quer atingir com isso, pra poder então definir o que é importante de ser estudado. Quando comecei a produzir esse material, por exemplo, pensei primeiramente em meu objetivo com ele, que é tornar você, leitor, apto a trabalhar com a programação de sistemas embarcados, e a partir disso, defini o que seria o roteiro de estudos ideal para isso, criando assim, o sumário desse guia. Como o foco é a programação, achei importante primeiro te ensinar algumas coisas fundamentais pra você entender onde está realmente se enfiando (Falo desse exato capítulo, no caso). Depois disso, te apresentarei um arsenal de armas super poderosas e te ensinarei aos poucos como utilizar cada uma dessas pra atingir o seu objetivo. Temos então a parte de refinar o seu produto e te tornar um guerreiro cada vez mais forte na área de programação, capaz de trabalhar em grupo, conquistar novos territórios e deixar seu legado a novos heróis. Viu como meu plano tinha um começo, meio e fim? Isso que é importante, você traçar um objetivo, e saber o porquê quer aquilo, pra se manter firme e motivado em seu caminho.
+
+- Tenha consistência - Não adianta você estudar uma vez por mês e achar que isso é suficiente para aprender algo novo. Se você quer resultados, precisa ser consistente. Organize uma agenda com todas as suas tarefas e separe um horário específico para seus estudos de programação. O ideal seria que você estudasse pelo menos um pouquinho por dia (coisa de meia hora), mas a gente sabe que o que realmente acontece é que tem dias que acabam não dando, e outros em que a gente consegue estudar até 2 horas. Mas tente manter uma frequência interessante, de pelo menos 3 ou 4 vezes por semana. E comece sempre sua sessão de estudos com uma revisão rápida dos tópicos anteriores. Isso vai te ajudar a manter as coisas sempre frescas.
+
+- Durma bem - Uma mente descansada é importante para que você tenha energia de fazer suas atividades do dia de forma efetiva. Evite ficar muito tempo sem tirar algumas horinhas de sono. Até mesmo o cochilo depois do almoço é algo muito bem vindo.
+
+- Faça atividades físicas - É aquele famoso ditado "corpo são, mente sã". Já foi comprovado científicamente que a prática de atividades físicas é algo infinitamente improtante para seu bem estar, e logo, para o bom desenrolar das demais atividades do seu dia. Se você costuma passar horas sentado, todos os dias, em frente ao computador, depois das primeiras semanas de adaptação, você vai começar a perceber um gás depois de realizar suas atividades físicas e começará a sentir prazer em realizá-las por si só, sem mais essa visão de ser algo para ajudar, e sim sendo uma atividade de lazer.
+
+- Tenha tempo pra você - E falando em lazer, é importante que você tenha também na sua agenda horários definidos para realizar atividades que te deixam feliz, como por exemplo jogar algo com seus amigos, ler um livro, cozinhar, passar tempo com a famíliar ou brincar com seu cachorro. Isso vai te deixar motivado a continuar com sua rotina, tendo em vista que você estará mais animado e disposto a fazer as atividades. 
+
+- Tenha um pensamento crítico das coisas - Enquanto programa, você dará de frente com muitos problemas, e é importante que você saiba ter um olhar crítico da coisa e buscar por diferentes formas de solução, testar e descobrir qual a melhor. Essa sim é a principal função de um programador, e não escrever código, como muitos pensam (nesse caso você não passa de um digitador, que hoje em dia poderia ser substituido até por uma inteligência artificial). O que define um programador é sua capacidade de olhar para um problema e pensar em uma solução efetiva, algo que é desenvolvido com a experiência, e que deve ser exercitado todos os dias. Algumas dicas para solução de problemas: 
+    - Identifique e entenda o problema - Tem uma frase famosa de Lincoln, na qual ele diz "Se eu tivesse nove horas para cortar uma árvore, passaria seis horas afiando meu machado", e o que podemos interpretar disso é que é importante você se preparar e estudar bem o que quer fazer antes de realmente fazer a coisa
+    - Desmembre o problema -  Busque um contexto em que ele acontece, o que é realmente o problema e qual sua importância (Se for baixa, pense se realmente vale a pena investir tempo em resolvê-lo)
+    - Divida grandes tarefas em várias tarefas pequenas - Existem muitas razões pra fazer isso, tais como um melhor entendimento geral da situação, planejamento por etapas (gerando melhores estimativas de tempo demandado), e foco na hora de resolver alguma delas (afinal, você tem uma pequena tarefa pra resolver, ao invés de uma situação gigantesca)
+    - Antes de escrever código, escreva um algoritmo a mão (ou no computador mesmo, mas em lingugagem humana). Assim você só precisará "traduzir" suas ideias para que o computado as entenda. 
+
+- Princípio de pareto - "Os primeiros 20% de esforço são os que geram os primeiros 80% de resultado", ou seja, o "grosso" de algo pode ser entendido com a menor parte de todos os  seus esforços. Então aprenda o básico e depois se aprofunde aprendendo de acordo com a demanda de seus projetos
+
+- Se travar, pause e volte depois de um descanso desse problema - Isso não significa que você deve parar tudo que tem pra fazer, e sim pausar aquela tarefa em específico. Quando voltar, comece do 0, estruturando novamente o problema e pensando em novas formas de agir. 
+
+- Pratique, erre, sofra - A melhor forma de estudar programação é praticando, então faça o máximo de exercícios que conseguir, faça alguns projetos simples, se desafie. É só martelando e batendo muito a cabeça que você vai começar a entender como realmente as coisas funcionam e se adaptar para não cometer os mesmos erros ("Erre rápido, pra que possa corrigir o mais cedo possível")
+
+- Por fim, ensine - Um estudo sobre as formas de estudar diz que a melhor forma de aprender algo, é ensinando isso a outra pessoa (com até 90% de absorção do conteúdo estudado). Então tente documentar as coisas que você estuda, como se estivesse explicando pro você do passado, que ainda não entendia esse conceito, ou pratique explicando isso pra sua família e amigos. Caso se sinta inibído, escreva um diário, se não, mostre isso pro mundo, escreva um blog, crie um canal no youtube, qualquer coisa. O importante é você explicar os conceitos estudados de uma forma clara e concisa. Isso te ajuda a organizar as próprias ideias, te fazendo revisitar conceitos não tão firmados, e construindo um material muito bom no final de tudo.
+
+Tudo isso que eu tenho falado pode parecer papo de coach (e meio que é), mas não se deixe desanimar com toda essa ladainha. Podem parecer besteiras, mas se você criar bons hábitos, verá que com o tempo, as coisas realmente vão parecer se encaixar. Durante a pandemia eu passei por um período difícil, quase tive um burnout, mas consegui me recolocar nos trilhos graças a muitas dessas coisas que eu estou compartilhando com você. No princípio eu também tive dificuldade em entender isso, e tinha também preguiça dessas coisas, mas hoje reconheço a real importância dessa conversa. 
+
+Programando em C
 =
 
+O que é C?
+-
 C é uma linguagem de uso muito amplo, e super consolidada no mercado (tendo em vista que tem 50 anos de idade e continua sendo usada em sistemas modernos). A linguagem C recebeu durante toda sua vida, algumas atualizações e também serviu de base para "novas" linguagens (C++ e C#), com implementação de novos conceitos e funções. Novas entre aspas pois essas podem ser interpretadas como um super pacote da linguagem C, como se ela tivesse recebido um buff, mas mantido sua essência.  Um código escrito em C, por exemplo, é facilmente adaptado para C++ ou C#, tendo em vista que elas compartilham quase toda a mesma sintaxe e semântica (Apesar disso, caso você trabalhe com alguma dessas linguagens algum dia, não se prenda a programar como faria em C e explore o potencial de cada uma, pois se não trouxessem melhoras significativas, nem teriam sido inventadas). Além dessas duas, temos os exemplos de Python e Java que são 100% diferentes de C, mas que foram contruídas baseando-se nessa linguagem, tendo portanto alguns elementos semelhantes, que fazem com que, caso você saiba C, será mais fácil de estudar essas novas linguagens.
 
 Figura de linguagens mais populares
@@ -69,7 +111,7 @@ int main(){
     return 0;
 }
 ```
-
+****
 Variáveis
 -
 
@@ -120,6 +162,18 @@ Símbolo   | Significados
 \** | Exponenciação
 % | Resto da divisão (módulo)
 
+```C
+int a = 10;
+int b = 3;
+int c = 2;
+int soma = a+b; //Retorna 13
+int sub = a-b; //Retorna 7
+int div = a/c; //Retorna 5
+int mult = a*b; //Retorna 30
+int expo = a**b; //Retorna 1000
+int resto = a%b; //Retorna 1
+```
+
 Operadores relacionais
 -
 
@@ -140,12 +194,6 @@ Seguem exemplos de utilização de cada um desses:
 int a = 10;
 int b = 3;
 int c = 2;
-int soma = a+b; //Retorna 13
-int sub = a-b; //Retorna 7
-int div = a/c; //Retorna 5
-int mult = a*b; //Retorna 30
-int expo = a**b; //Retorna 1000
-int resto = a%b; //Retorna 1
 bool maior = (a>b); //Retorna true
 bool menor = (a<b); //Retorna false
 bool menor_igual = (a<=b); //Retorna false 
@@ -458,10 +506,10 @@ Bom, agora você já tem uma boa base em relação à sintaxe de C e deve estar 
 
 4. Escreva um programa que declare um inteiro, um real e um char, e ponteiros para inteiro, real, e char. Associe as variaveis aos ponteiros (use &). Modifique os valores de cada variável usando os ponteiros. Imprima os valores das variáveis antes e após a modificação.
 
-Boas práticas
+Como escrever melhores código (Boas práticas)
 =
 
-Como você deve ter percebido durante
+Como você deve ter percebido durante o capítulo anterior, existem várias formas de fazer a mesma coisa. E nós, programadores, temos total liberdade para criarmos um código da forma que quisermos. Mas é importante também pensarmos que em algum momento precisaremos revisitar esse código (ou mostrá-lo a outra pessoa), e para que todos entendam o que está acontecendo, existem algumas convenções importantes de serem consideradas, de forma a tornar o seu código mais legível e produtivo. 
 
 Nomes
 -
