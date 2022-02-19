@@ -35,7 +35,7 @@ Listas:
 
 Assim se adiciona um link: [google](htt´://google.com)
 
-![Image](images/teste.png "icon")
+![Image](../images/teste.png "icon")
 
 > Criando um bloco de citações
 >

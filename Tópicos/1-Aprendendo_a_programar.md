@@ -87,13 +87,13 @@ Para esse conteúdo inicial, você não precisará configurara nada e nem instal
 
 Depois de criar uma conta, crie um novo "repl" clicando no botão de "+" da página inicial. Em template selecione "C", dê um novo nome ao seu repositório e clique em criar:
 
-![Image](images/replit.png "icon")
+![Image](../images/replit.png "icon")
 
-![Image](images/replit2.png "icon")
+![Image](../images/replit2.png "icon")
 
 Essa será a interface que você verá em seguida:
 
-![Image](images/replit3.png "icon")
+![Image](../images/replit3.png "icon")
 
 À esquerda temos o seu projeto, com sua árvore de arquivos. É aqui que você organizará seus arquivos e pastas. 
 
