@@ -14,6 +14,7 @@ A programação é uma ferramenta poderosissíma, e de amplo uso, que vai muito 
         - Estrutura do código em C
         - Olá mundo
         - Variáveis
+            - Printando variáveis
         - Operadores
             - Operadores matemáticos
             - Operadores relacionais
@@ -64,7 +65,11 @@ A programação é uma ferramenta poderosissíma, e de amplo uso, que vai muito 
     - Instalação
         - Blink
     - freeRTOS
-    - Evitando delays
+    - Otimizações
+        - Debouncing
+        - Sobre timers
+        - Interrupções
+        - Paralelismo
     - Exercícios
 
 6. **[Como escrever melhores códigos (Boas práticas)](https://github.com/olavocinacio/Capacita-o_Programa-o_EPTA/blob/main/T%C3%B3picos/6-Como_escrever_c%C3%B3digos_melhores.md)**

@@ -1,18 +1,47 @@
-Pra que serve Markdown?
+Por que documentação é importante?
 =
 
+O que é markdown e como utilizar?
+=
+markdownguide.org/getting-started/
 
-Aprendendo a usar Markdown
+https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open
+
+
+Headers
+=
+```markdown
+Título
 =
 
+Subtítulo
+-
+
+# Título 1 <h1> Subtítulo
+## Título 2 <h2>
+### Título 3 <h3>
+#### Título 4 <h4>
+##### Título 5 <h5>
+###### Título 6 <h6>
+
+# Alternative heading
+```
 
 Heading
 =
 
-Sub-heading
+Sub-título
 -
+# Título 1
+## Título 2 <h2> 
+### Título 3 <h3>
+#### Título 4 <h4>
+##### Título 5 <h5>
+###### Título 6 <h6>
 
 # Alternative heading
+
+De onde surgem esses "h"? HTML e como podemos usar ele em documentação
 
 Parágrafos separados por uma linha em branco
 
@@ -21,9 +50,19 @@ teste
 
 Atributos de texto: _itálico_, **negrito**, `monospace`
 
+```markdown
+_itálico_
+**negrito**
+`monospace`
+```
+
 Régua horizontal:
 
 ---
+
+```markdown
+
+```
 
 Listas:
 1. Frutas
@@ -52,6 +91,10 @@ function teste(){
     return "Olá";
 }
 ```
+
+Criando tabelas
+=
+
 
 Criando uma boa documentação
 =

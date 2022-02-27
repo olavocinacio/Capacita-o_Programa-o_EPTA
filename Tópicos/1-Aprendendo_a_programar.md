@@ -1,3 +1,5 @@
+<div style='text-align: justify'>
+
 Aprendendo a programar
 =
 
@@ -14,6 +16,7 @@ Sendo assim, foram criadas novas linguagens para dizer ao computador o que fazer
 
 Apesar de ser mais fácil que escrever um código direto em binário, concorda que ainda é muito complexo fazer as coisas em assembly? A galera daquela época também achava, e foi assim que a história se repetiu, e foram criadas novas linguagens, baseadas diretamente em binário, ou dessa vez baseando-se em assembly, como é o caso da linguagem que teremos foco no futuro dessa capacitação, a Linguagem C, criada em 1972, por Dennis Ritchie
 
+****
 
 Como estudar?
 -
@@ -50,6 +53,8 @@ A primeira cosia que é importante falar quando se trata de estudar, é sobre se
 
 - Digite ao invés de copiar - Muitas vezes você vai acabar encontrando a resposta para um problema em um fórum, com o código já pronto, ou vai acompanhar um tutorial no youtube com o código disponível. Nesses casos, a tentação de usar o famoso "Ctrl + C" e "Ctrl + V" é grande, mas evite isso ao máximo. Quando você precisar replicar um código, leia ele, tente entender e por fim copie manualmente em seu projeto. Isso te ajudará a fixar o conteúdo e se adaptar à sintaxe da linguagem.
 
+- A documentação é sua amiga - Sempre que criam uma nova ferramenta na área de programação, há uma equipe alocada para a construção de uma documentação que ensinará a utilizar essa ferramenta, afinal, ninguém é obrigado a adivinhar como as coisas funcionam. Portanto não se assuste com o quão técnica elas podem parecer às vezes, e sempre que for começar a trabalhar com uma nova tecnologia, busque a documentação da mesma. Chegará um ponto em que você não precisará de mais nada além desse documento para criar seus próprios projetos, nada mais de se matar pra encontrar conteúdo em fóruns, ou no youtube com alguém fazendo a exata coisa que você quer fazer. Ao invés disso, você entenderá os fundamentos e conseguirá aplicá-los em seus próprios projetos.
+
 - Por fim, ensine - Um estudo sobre as formas de estudar diz que a melhor forma de aprender algo, é ensinando isso a outra pessoa (com até 90% de absorção do conteúdo estudado). Então tente documentar as coisas que você estuda, como se estivesse explicando pro você do passado, que ainda não entendia esse conceito, ou pratique explicando isso pra sua família e amigos. Caso se sinta inibído, escreva um diário, se não, mostre isso pro mundo, escreva um blog, crie um canal no youtube, qualquer coisa. O importante é você explicar os conceitos estudados de uma forma clara e concisa. Isso te ajuda a organizar as próprias ideias, te fazendo revisitar conceitos não tão firmados, e construindo um material muito bom no final de tudo.
 
 Tudo isso que eu tenho falado pode parecer papo de coach (e meio que é), mas não se deixe desanimar com toda essa ladainha. Podem parecer besteiras, mas se você criar bons hábitos, verá que com o tempo, as coisas realmente vão parecer se encaixar. Durante a pandemia eu passei por um período difícil, quase tive um burnout, mas consegui me recolocar nos trilhos graças a muitas dessas coisas que eu estou compartilhando com você. No princípio eu também tive dificuldade em entender isso, e tinha também preguiça dessas coisas, mas hoje reconheço a real importância dessa conversa. 
@@ -80,6 +85,8 @@ Para a área de embarcados (que é a que nos interessa aqui), a lingugagem C é,
 
 Apesar disso tudo, a linguagem C tem sim seus defeitos (como a não implementação do conceito de orientação a objetos; pressupor que o programador sabe o que está fazendo, ocasionando problemas como memory leaks, buffer overruns, segmentation faults) e tem recebido potenciais substitutos muito interessantes, como é o caso do Rust, a maior aposta para substituir C na área de embarcados. Mas deixemos isso como tarefa de casa para um futuro próximo...
 
+****
+
 Ambiente inicial de desenvolvimento
 -
 
@@ -87,14 +94,21 @@ Para esse conteúdo inicial, você não precisará configurara nada e nem instal
 
 Depois de criar uma conta, crie um novo "repl" clicando no botão de "+" da página inicial. Em template selecione "C", dê um novo nome ao seu repositório e clique em criar:
 
+<center>
+
 ![Image](../images/replit.png "icon")
 
 ![Image](../images/replit2.png "icon")
 
+</center>
+
 Essa será a interface que você verá em seguida:
+
+<center>
 
 ![Image](../images/replit3.png "icon")
 
+</center>
 À esquerda temos o seu projeto, com sua árvore de arquivos. É aqui que você organizará seus arquivos e pastas. 
 
 Ao centro, temos seu editor de texto, que é onde você escreverá seu código.
@@ -102,6 +116,8 @@ Ao centro, temos seu editor de texto, que é onde você escreverá seu código.
 E à direita, temos um console onde serão printadas as informações do seu código compilado (erros, avisos, ou simplesmente os resultados dos seus "printf").
 
 Para rodar o código escrito no seu arquivo "main.c", basta clicar no botão verde de "Run" na parte superior. Na parte de bibliotecas desse documento, você verá como compilar outros arquivos do seu programa além do main.
+
+****
 
 Estrutura de um código C
 -
@@ -138,24 +154,43 @@ int main(){
     return 0;
 }
 ```
+
 ****
+
 Variáveis
 -
 
 Vamos declarar agora algumas variáveis e estudar seus diferentes tipos
 
 ``` C
-#include <stdio.h>
-
-int main(){
-    int inteiro = 3;
-    float racional = 3.5;
-    char caracter[1] = "a"; //Entre parêntes é o tamanho do texto
-    char frase[9] = "Olá mundo";
-    bool booleano = true;
-    return 0;
-}
+int inteiro = 3;
+float racional = 3.5;
+char caracter[1] = "a"; //Entre parêntes é o tamanho do texto
+char frase[9] = "Olá mundo";
+bool booleano = true;
 ```
+
+
+Além dos tipos explícitos de variáveis, temos alguns prefixos, que permitem um comportamento específico em relação a uma variável criada:
+
+```C
+static int um = 1; //Um valor local ao módulo atual (conjunto de chaves em que se encontra)
+volatile int dois = 2; //A variável não mantém seu valor entre as leituras (extremo oposto de uma const)
+const int tres = 3; //Variável imutável, que devolverá um erro caso tente alterar seu valor
+extern int quatro = 4; //Uma variável criada em um arquivo diferente do atual, e que será importada
+```
+
+Existe ainda uma última forma de declarar um variável, utilizando o "define":
+
+```C
+#define pi = 3.1415;
+```
+
+Esse é um caso parecido com a const, em que o valor não será alterado, com a diferença de que agora, essa declaração é feita antes mesmo do código começar a rodar. Existem vantagens e desvantagens, e você deve ser muito cuidadoso ao utilizar, para evitar que as coisas saiam do seu controle. 
+
+Para tentar entender um pouco mais, dê uma lida nessa postagem do fórum StackOverflow, e em seus links de referência: [Quando usar const e quando usar #define?](https://pt.stackoverflow.com/questions/136467/quando-usar-const-e-quando-usar-define)
+
+### Printando variáveis <h3>
 
 Cada variável possui um identificador que usaremos para printarmos elas no console, usando o "printf":
 
@@ -174,11 +209,11 @@ Para printarmos mais de uma variável, basta repetir o processo:
 printf("O inteiro vale %i e o float vale %f", inteiro, racional);
 ```
 
+****
 Operadores 
 -
 
-Operadores matemáticos
--
+### Operadores matemáticos <h3>
 
 Símbolo   | Significados 
 --------- | ------------  
@@ -201,8 +236,7 @@ int expo = a**b; //Retorna 1000
 int resto = a%b; //Retorna 1
 ```
 
-Operadores relacionais
--
+### Operadores relacionais <h3>
 
 Símbolo   | Significados 
 --------- | ------------ 
@@ -229,8 +263,7 @@ bool igual = (a==b); //Retorna false
 bool diferente = (a!=b); //Retorna true
 ```
 
-static, volatile, const
-
+****
 
 Condicionais
 -
@@ -298,6 +331,8 @@ int main(){
 }
 ```
 
+****
+
 Criando funções
 -
 
@@ -348,6 +383,8 @@ int main(){
 ```
 
 Talvez você não tenha notado a grandiosidade das funções, devido à baixa complexidade da operação que estamos realizando, mas imagine um caso em que seja feita a aquisição de dados de um sensor, por exemplo. Seria inviável ter esse código escritos repetidas vezes. 
+
+****
 
 Loops
 -
@@ -409,6 +446,8 @@ int main(){
 
 Nesse caso, implementamos o mesmo código com valor inicial em 0, incremento de 1 e parada em 99, mas como visto nas observações de cada estrutura, elas possuem aplicações específicas de utilização. Você deve ser inteligente para identificar qual a melhor estrutura de repetição de acordo com a sua situação de uso.
 
+****
+
 Structures
 -
 
@@ -438,6 +477,8 @@ meu_carro.dono = "Daniel";
 
 Agora temos a variável "meu_carro", com suas "subariáveis" definidas, e que podem ser acessadas a qualquer momento. Esse conceito é muito útil quando você precisa organizar elementos relacionados a variás variáveis iguais, pois você tem um grau a mais de abstração.
 
+****
+
 Listas
 -
 
@@ -463,8 +504,12 @@ printf("Cinco: %i", numeros[1][1]);
 
 ```
 
+****
+
 Ponteiros
 -
+
+A abordagem que teremos dentro desse tópico será mais simplista, tendo em vista que é um assunto um tanto quanto complexo. Apesar disso, deixarei recomendações de materiais que auxiliarão a atingir uma compreensão maior sobre o assunto, te permitindo aplicar esses conhecimentos no futuro. Lembre-se também que a documentação é sua amiga, e você pode, e deve buscá-la quando tiver alguma dúvida.
 
 Um ponteiro guarda um endereço de memória. Utilizamos isso para acompanhar e manipular o alocamento de variáveis dentro de um código.
 
@@ -475,18 +520,74 @@ int numero = 5;
 int *posicao = &numero; //O ponteiro posição aponta para o endereço de memória em que está alocada a variável numero
 ```
 
-Isso é importante para técnicas como a alocação dinâmica e a criação de listas encadeadas.
+Isso nos dará controle de onde nossas variáveis estão sendo armazenadas dentro da memória, permitindo que utilizemos de técnicas como a alocação dinâmica e a criação de listas encadeadas, por exemplo.
 
-Sobre a alocação dinâmica:
+### Sobre alocação dinâmica: <h3>
 
-http://linguagemc.com.br/alocacao-dinamica-de-memoria-em-c/
+Utilizaremos alocação dinâmica para reservar uma porção de memória durante o tempo de execução da aplicação. Para isso usaremos duas principais funções, a "malloc" e a "free":
+
+```C
+int * endereco_regiao_alocada; //Criando o ponteiro que apontará para a região
+endereco_regiao_alocada = (int *)malloc(10*sizeof(int)); //Criação da região de tamanho de 10 ints
+
+if(endereco_regiao_alocada != NULL){ 
+    //Se o endereço retornado for válido, podemos operar com o ponteiro
+} 
+
+free(endereco_regiao_alocada); //Libera a região de memória para outras tarefas
+endereco_regiao_alocada = NULL; //Agora o ponteiro não mais possui um endereço válido
+```
+
+Para maior entendimento e se aprofundar no assunto, recomenda-se as seguintes fontes:
+
+[Ponteiro em C: Alocação dinâmica de memória - Fernando Deluno Garcia](https://www.embarcados.com.br/ponteiro-em-c-alocacao-dinamica/)
+
+[Alocação dinâmica em C - Profa Rosana Braga USP](http://wiki.icmc.usp.br/images/5/59/Aula14-AlocacaoDinamica.pdf)
+
+[Alocação Dinâmica em C - Eduardo Casavella](http://linguagemc.com.br/alocacao-dinamica-de-memoria-em-c/)
+
+### Sobre listas encadeadas: <h3>
+
+Como o próprio nome diz, aqui nós teremos várias listas linkadas, umas as outras, formando uma grande lista no final. Mas como isso funciona e o que isso tem a ver com ponteiros?
+
+Quando estamos programando temos que nos atentar às regiões de memória que temos disponível para armazenar nossas informações sem interferir nas variáveis de ambiente(relacionadas por exemplo ao seu sistema operacional, ou aplicações que estão rodando). E isso é ainda mais agravante em embarcados, quando temos um espaço muito menor de alocação. Em uma lista convencional, nossas variáves são armazenadas em endereços de memória subsequentes, mas nesse caso alocaremos cada variável em um lugar qualquer vazio de nossa memória e teremos consciência de qual o próximo endereço a partir de um ponteiro que apontará para seu endereço: 
+
+<center>
+
+![Image](../images/lista_encadeada_1.png) 
+
+![Image](../images/lista_encadeada_2.png)
+
+</center>
+
+Vamos agora criar uma lista encadeada então, para isso criaremos uma struct com o conteudo que queremos salvar e o ponteiro apontando para o próximo item:
+
+```C
+struct registro{
+    int conteudo;
+    struct registro *prox;
+}
+
+typedef struct registro celula; //Tratando as células como um novo tipo de dado
+
+celula c; //Referente ao conteudo
+celulca *p; //Referente ao ponteiro
+
+c.conteudo; //será o conteúdo
+c.prox; //Será o endereço da próxima
+```
+
+Pode-se então usar os conceitos estudados no tópico de alocação dinâmica para ir salvando esses valores em locais disponíveis da memória. 
+
+Para uma melhor compreensão do assunto e estudo de exemplos recomenda-se os seguintes materiais:
+
+[Listas encadeadas - Paulo Feofiloff Ime Usp](https://www.ime.usp.br/~pf/algoritmos/aulas/lista.html)
+
+[Listas dinâmicas encadeadas em C - Veslasoft](https://www.youtube.com/playlist?list=PL1EkVGo1AQ0HgYpSwWwt_7JnavxRmCwt0)
 
 
-Sobre listas encadeadas:
 
-https://www.ime.usp.br/~pf/algoritmos/aulas/lista.html
-
-
+****
 
 Bibliotecas e arquivos externos
 -
@@ -522,6 +623,8 @@ Nesse caso, seu único arquivo ".c" será o principal,e os demais funcionaram co
 
 O compilador tem como padrão o início da sua leitura no arquivo "main.c", você até consegue alterar isso, mas não é algo que valha a pena. Habitue-se a ter esse arquivo para chamar as rotinas proveniente dos seus demais arquivos. Isso além de mais cômodo, é uma boa prática que facilita o entendimento aos demais programadores, que saberão também que devem começar a estudar o código por esse arquivo.
 
+***
+
 Exercícios
 -
 
@@ -534,3 +637,6 @@ Bom, agora você já tem uma boa base em relação à sintaxe de C e deve estar 
 3. Crie um código em C para cadastro de automóveis, utilizando structures. (O usuário deve entrar com o modelo, ano e cor do carro, e esses valores devem ser adicionados a uma lista salva em um arquivo txt)
 
 4. Escreva um programa que declare um inteiro, um real e um char, e ponteiros para inteiro, real, e char. Associe as variaveis aos ponteiros (use &). Modifique os valores de cada variável usando os ponteiros. Imprima os valores das variáveis antes e após a modificação.
+
+***
+</div>
