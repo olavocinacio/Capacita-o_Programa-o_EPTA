@@ -66,10 +66,20 @@ O que é C?
 -
 C é uma linguagem de uso muito amplo, e super consolidada no mercado (tendo em vista que tem 50 anos de idade e continua sendo usada em sistemas modernos). A linguagem C recebeu durante toda sua vida, algumas atualizações e também serviu de base para "novas" linguagens (C++ e C#), com implementação de novos conceitos e funções. Novas entre aspas pois essas podem ser interpretadas como um super pacote da linguagem C, como se ela tivesse recebido um buff, mas mantido sua essência.  Um código escrito em C, por exemplo, é facilmente adaptado para C++ ou C#, tendo em vista que elas compartilham quase toda a mesma sintaxe e semântica (Apesar disso, caso você trabalhe com alguma dessas linguagens algum dia, não se prenda a programar como faria em C e explore o potencial de cada uma, pois se não trouxessem melhoras significativas, nem teriam sido inventadas). Além dessas duas, temos os exemplos de Python e Java que são 100% diferentes de C, mas que foram contruídas baseando-se nessa linguagem, tendo portanto alguns elementos semelhantes, que fazem com que, caso você saiba C, será mais fácil de estudar essas novas linguagens.
 
-Figura de linguagens mais populares
+Se quiser saber um pouco mais sobre essas diferenças, assista a esse vídeo bem curtinho que te dará um panorama geral:
+
+[C vs C++ vs C# - conaticus](https://www.youtube.com/watch?v=sNMtjs_wQiE)
+
+Aqui agora uma figura com as linguagens mais populares, de acordo com o índice TIOBE de medição, que verifica a quantidade de vezes que algo sobre a linguagem foi procurada em um serviço de busca (como o google, por exemplo). Perceba que C ocupa o segundo lugar nessa classificação, ocupando também o quinto lugar na tabela que segue o índice PYPL de medição (que registra a quantidade de tutoriais buscados a respeito de uma determinada linguagem), provando assim que apesar de antiga, ela continua super em alta.
+
+<center>
+
+![Image](../images/linguagens_mais_utilizadas.png "icon")
+
+</center>
 
 Dentre as aplicações de C e suas variantes, encontram-se:
-- Sistemas opercionais (Todos os windows, MAC OS X, Chrome OS, entre outros)
+- Sistemas opercionais (Todos os windows, MAC OS X, Kernel do Linux, Chrome OS, entre outros)
 - Navegadores web (Chrome, Firefox, Safari, Opera)
 - Office (Microsoft office, libreOffice, Corel Office)
 - Clientes de e-mail (Outlook, IBM lotus notes, Mozilla thunderbird)
@@ -116,6 +126,10 @@ Ao centro, temos seu editor de texto, que é onde você escreverá seu código.
 E à direita, temos um console onde serão printadas as informações do seu código compilado (erros, avisos, ou simplesmente os resultados dos seus "printf").
 
 Para rodar o código escrito no seu arquivo "main.c", basta clicar no botão verde de "Run" na parte superior. Na parte de bibliotecas desse documento, você verá como compilar outros arquivos do seu programa além do main.
+
+Antes de começarmos oficialmente então, dê uma olhada nesse vídeo, para ter um panorama geral do caminho que você começará a trilhar:
+
+[C in 100 seconds - Fireship](https://www.youtube.com/watch?v=U3aXWizDbQ4)
 
 ****
 
