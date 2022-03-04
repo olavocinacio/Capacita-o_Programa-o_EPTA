@@ -1,3 +1,5 @@
+<div style='text-align: justify'>
+
 O que é versionamento de código?
 -
 https://en.wikipedia.org/wiki/Version_control
@@ -50,3 +52,5 @@ https://blog.logrocket.com/the-git-workflow-you-need-how-to-deal-with-multiple-t
 Exercícios
 -
 https://trello.com/b/Oj1H36jv/gitcapacita%C3%A7%C3%A3o
+
+</div>

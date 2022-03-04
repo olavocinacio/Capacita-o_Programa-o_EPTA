@@ -1,3 +1,5 @@
+<div style='text-align: justify'>
+
 Material utilizado pra construção dessa material
 =
 https://terminalroot.com.br/2021/03/lista-de-alguns-softwares-famosos-escritos-em-cpp.html
@@ -34,3 +36,5 @@ Vídeos interessantes de serem assistidos
 https://www.youtube.com/watch?v=QXjU9qTsYCc
 
 https://www.youtube.com/watch?v=No-6xCBWdT8
+
+</div>

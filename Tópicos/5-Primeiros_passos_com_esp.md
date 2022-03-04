@@ -1,3 +1,5 @@
+<div style='text-align: justify'>
+
 Primeiros passos com ESP
 =
 
@@ -29,3 +31,5 @@ Otimizações
 
 Exercícios
 -
+
+</div>

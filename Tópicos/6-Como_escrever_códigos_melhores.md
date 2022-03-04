@@ -1,3 +1,4 @@
+<div style='text-align: justify'>
 
 Como escrever melhores código (Boas práticas)
 =
@@ -62,3 +63,5 @@ Os chamados números mágicos são valores que aparecem no código e são usados
 
 18) Escreva os comentários necessários na medida que for escrevendo o código. Não escreva o código e deixe para comentar depois. É bem mais
 fácil elaborar os comentários quando você ainda se lembra dos detalhes.
+
+</div>
