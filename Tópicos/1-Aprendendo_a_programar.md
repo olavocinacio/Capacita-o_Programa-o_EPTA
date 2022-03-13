@@ -642,7 +642,7 @@ O compilador tem como padrão o início da sua leitura no arquivo "main.c", voc�
 Exercícios
 -
 
-Bom, agora você já tem uma boa base em relação à sintaxe de C e deve estar apto a criar seus próprios códigos. Para confirmar isso, resolva os seguinte exercícios em um repositório público do Replit, e envie o link desse para "olavo1611@gmail.com" até o dia 05/02 (você será avaliado). Caso tenha dúvidas, não se acanhe em me chamar em "16996426659".
+Bom, agora você já tem uma boa base em relação à sintaxe de C e deve estar apto a criar seus próprios códigos. Para confirmar isso, resolva os seguinte exercícios em um repositório público do Replit, e envie o link desse para "olavo1611@gmail.com". Caso tenha dúvidas, não se acanhe em me chamar também.
 
 1. Crie um código em C que printe n números da sequência fibonacci (o primeiro deverá sempre ser o número 1,e número n de repetições deve ser escolhido pelo usuário)
 
